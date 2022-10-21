@@ -1,4 +1,11 @@
 
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url(../src/fonts/Gilroy-Medium/Gilroy-Medium.woff) format('woff');
+}
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +18,7 @@
   min-width: 320px;
   padding: 10px;
   background-color: #F8D57E;
-  font-family:  Helvetica, Arial, sans-serif;
+  font-family:  "Gilroy-Medium", Helvetica, Arial, sans-serif;
 }
 
 .page__content {
@@ -41,3 +48,17 @@ height: 80vh;
   width: 477px;
   border: 1px solid black;
 }
+
+.Middle__header p{
+  font-size: 40px;
+  line-height: 50px;
+  text-align: left;
+  margin: 0;
+
+}
+
+
+.text2 {
+  color: #F4B860;
+}
+
