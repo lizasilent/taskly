@@ -1,23 +1,23 @@
 
 import './App.css';
 import LeftMenu from "./components/LeftMenu";
-import MiddleMenu from "./components/MiddleMenu";
+import CenterMenu from "./components/CenterMenu";
 import RightMenu from "./components/RightMenu";
+import Main from "./components/Main";
 
 function App() {
   return (
     <div className="App">
-        <div className="page">
-          <div className="page__content"> 
+       
+          <Main />
 
       <LeftMenu/>
-      <MiddleMenu/>
+      <CenterMenu/>
       <RightMenu/>
 
 
           </div>
-        </div>
-    </div>
+        
   );
 }
 

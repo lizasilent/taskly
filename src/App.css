@@ -32,24 +32,24 @@
 
 }
 
-.Left {
+.left {
 width: 477px;
 border: 1px solid black;
 height: 80vh;
 }
 
-.Middle {
+.middle {
   width: 477px;
   border: 1px solid black;
  
 }
 
-.Right {
+.right {
   width: 477px;
   border: 1px solid black;
 }
 
-.Middle__header p{
+.middle__header p{
   font-size: 40px;
   line-height: 50px;
   text-align: left;

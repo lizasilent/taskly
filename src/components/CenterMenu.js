@@ -1,11 +1,11 @@
 import React from "react";
 
 
-function MiddleMenu() {
+function CenterMenu() {
     return (
-       <div className="Middle">
+       <div className="middle">
 
-        <div className="Middle__header">
+        <div className="middle__header">
         <p className="text1">Today’s schedule</p>
         <p className="text2">Thursday 11</p>
         </div>
@@ -17,4 +17,4 @@ function MiddleMenu() {
 }
 
 
-export default MiddleMenu;
+export default CenterMenu;
