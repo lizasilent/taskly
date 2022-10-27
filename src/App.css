@@ -58,7 +58,43 @@ height: 80vh;
 }
 
 
-.text2 {
+.yellow {
   color: #F4B860;
 }
 
+.user {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.user__info {
+  text-align: left;
+  border: 1px solid black;
+
+}
+
+.user__name{
+font-size: 18px;
+line-height: 18px;
+letter-spacing: 0px;
+
+}
+
+.user__settings{
+font-size: 14px;
+line-height: 14px;
+letter-spacing: 0px;
+
+}
+
+.user__logo{
+  border: 1px solid black;
+  height: 60px;
+width: 57px;
+left: 189px;
+top: 0px;
+border-radius: 0px;
+
+}
