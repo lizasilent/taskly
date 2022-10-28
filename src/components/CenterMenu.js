@@ -2,8 +2,6 @@ import React from "react";
 
 function CenterMenu() {
 
-const date = new Date();
-const dayOfWeek = date.toString();
 
 
     return (
@@ -11,7 +9,7 @@ const dayOfWeek = date.toString();
 
         <div className="middle__header">
         <p className="text">Today’s schedule</p>
-        <p className="yellow">{dayOfWeek}</p>
+        <p className="text yellow">Fryday 28 oct</p>
         </div>
         <div></div>
 
