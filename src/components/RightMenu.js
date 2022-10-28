@@ -11,11 +11,17 @@ function RightMenu() {
         <div className="user__logo"></div>
       </div>
 
-      <div className="music"></div>
+      <div className="music">
+      <div className="menu-icon"></div>
+      </div>
 
       <div className="time">
-        <p></p>
-        <div className="weather"></div>
+        <div className="menu-icon"></div>
+        <p className="time__description">8:48 AM</p>
+        <div className="weather">
+            <div className="weather__icon"></div>
+            <p className="weather__description">Now is almost Sunny</p>
+        </div>
       </div>
 
 
