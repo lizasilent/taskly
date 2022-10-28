@@ -28,21 +28,21 @@
 }
 
 .left {
-  width: 477px;
+  width: 40%;
   border: 1px solid black;
   height: 80vh;
   padding: 0 30px;
 }
 
 .middle {
-  width: 477px;
+  width: 40%;
   margin: 0 96px;
   border: 1px solid black;
   padding: 0 30px;
 }
 
 .right {
-  width: 477px;
+  width: 20%;
   border: 1px solid black;
   padding: 0 30px;
 }
@@ -85,7 +85,7 @@
 }
 
 .user__logo {
-  background: url(./images/Profile\ Pic.png);
+  background: url(./images/profile-pic.png)  no-repeat;
   height: 60px;
   width: 57px;
 }
@@ -111,33 +111,48 @@
   height: 342px;
   padding: 30px 40px 0;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .close-icon {
-  background: url(./images/close.png);
+  background: url(./images/close.png) no-repeat;
   height: 8px;
   width: 8px;
+
+  justify-self: right;
 }
 
 .ads-info__header {
   font-size: 26px;
   font-weight: bold;
   margin: 0 0 20px;
+  width: 190px;
 }
 
 .ads-info__text {
   font-size: 14px;
   margin: 0;
+  width: 190px;
 }
 
 .ads-info__images {
-
+display: flex;
+flex-direction: row;
+align-items:flex-end;
+position: relative;
+max-height: 150px;
 }
 
 .ads-info__img-left {
-
+  background: url(./images/bust.png) no-repeat;
+  height: 150px;
+  width: 135px;
+  margin-right: 30px;
 }
 
 .ads-info__button {
-  
+  background: url(./images/CTA.png)  no-repeat;
+  height: 55px;
+  width: 55px;
 }

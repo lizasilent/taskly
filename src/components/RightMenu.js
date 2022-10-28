@@ -12,7 +12,9 @@ function RightMenu() {
       </div>
 
       <div className="music"></div>
+
       <div className="time">
+        <p></p>
         <div className="weather"></div>
       </div>
 
@@ -26,7 +28,7 @@ function RightMenu() {
        
         <div className="ads-info__images">
             <div className="ads-info__img-left"></div>
-            <button className="ads-info__button"></button>
+            <div className="ads-info__button"></div>
         </div>
       </div>
     </div>
