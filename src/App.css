@@ -1,10 +1,7 @@
-
 @font-face {
-  font-family: 'Gilroy-Medium';
-  src: url(../src/fonts/Gilroy-Medium/Gilroy-Medium.woff) format('woff');
+  font-family: "Gilroy-Medium";
+  src: url(../src/fonts/Gilroy-Medium/Gilroy-Medium.woff) format("woff");
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -17,26 +14,24 @@
 .page {
   min-width: 320px;
   padding: 10px;
-  background-color: #F8D57E;
-  font-family:  "Gilroy-Medium", Helvetica, Arial, sans-serif;
+  background-color: #f8d57e;
+  font-family: "Gilroy-Medium", Helvetica, Arial, sans-serif;
 }
 
 .page__content {
-    margin: 0 auto;
-    padding: 60px;
-    background-color: #f2f2f2;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-
-
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
 }
 
 .left {
-width: 477px;
-border: 1px solid black;
-height: 80vh;
-padding: 0 30px;
+  width: 477px;
+  border: 1px solid black;
+  height: 80vh;
+  padding: 0 30px;
 }
 
 .middle {
@@ -52,16 +47,15 @@ padding: 0 30px;
   padding: 0 30px;
 }
 
-.middle__header p{
-  font-size: 40px;
+.middle__header p {
+  font-size: 36px;
   line-height: 50px;
   text-align: left;
   margin: 0;
 }
 
-
 .yellow {
-  color: #F4B860;
+  color: #f4b860;
 }
 
 .user {
@@ -70,37 +64,80 @@ padding: 0 30px;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 100px;
-
 }
 
 .user__info {
   text-align: left;
-
 }
 
-.user__name{
-font-size: 18px;
-line-height: 18px;
-font-weight: bold;
-margin: 0 0 6px 0;
-
+.user__name {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  margin: 0 0 6px 0;
 }
 
-.user__settings{
-font-size: 14px;
-line-height: 14px;
-font-weight: bold;
-margin: 0;
-
+.user__settings {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  margin: 0;
 }
 
-.user__logo{
+.user__logo {
   background: url(./images/Profile\ Pic.png);
   height: 60px;
   width: 57px;
 }
 
-.music{
+.music {
   border: 1px solid black;
   height: 218px;
+  margin-bottom: 19px;
+}
+
+.time {
+  border: 1px solid black;
+  padding: 30px;
+  margin-bottom: 19px;
+}
+
+.weather {
+  border: 1px solid black;
+}
+
+.ads-info {
+  border: 1px solid black;
+  height: 342px;
+  padding: 30px 40px 0;
+  text-align: left;
+}
+
+.close-icon {
+  background: url(./images/close.png);
+  height: 8px;
+  width: 8px;
+}
+
+.ads-info__header {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.ads-info__text {
+  font-size: 14px;
+  margin: 0;
+}
+
+.ads-info__images {
+
+}
+
+.ads-info__img-left {
+
+}
+
+.ads-info__button {
+  
 }
