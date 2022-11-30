@@ -209,3 +209,44 @@ width: 100%;
   height: 55px;
   min-width: 55px;
 }
+
+.logo {
+  display: flex;
+  justify-content: left;
+  border: 1px solid black;
+}
+
+.logo__img {
+  height: 31px;
+  width: 100px;
+}
+
+.weekly {
+  border: 1px solid black;
+ 
+}
+
+
+.weekly__header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.weekly__header p {
+  margin: 0;
+  }
+
+.weekly__header-big {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.weekly__header-small {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  color: rgba(244, 184, 96, 1);
+}
+

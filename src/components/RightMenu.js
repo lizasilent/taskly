@@ -5,7 +5,7 @@ function RightMenu() {
     <div className="right">
       <div className="user">
         <div className="user__info">
-          <p className="user__name">Lizaveta Silentova</p>
+          <p className="user__name">Lizaveta Silent</p>
           <p className="user__settings yellow">My settings</p>
         </div>
         <div className="user__logo"></div>
