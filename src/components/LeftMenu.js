@@ -25,15 +25,21 @@ function LeftMenu() {
 
                 <ul className="weekly__list">
                     <li  className="weekly__item">
-                        <div>
-                        <img src={logo} alt=""></img>
-                        <p></p>
-                        <p></p>
+                        <div className="item__text-block">
+                        <p>Call doctor for tests</p>
+                        <p>15 Mar 2022 - 9:00 AM</p>
                         </div>
-                       
                        <div></div>
-
                     </li>
+
+                    <li  className="weekly__item">
+                        <div className="item__text-block">
+                        <p>Call doctor for tests</p>
+                        <p>15 Mar 2022 - 9:00 AM</p>
+                        </div>
+                       <div></div>
+                    </li>
+                    
                 </ul>
 
 </div>

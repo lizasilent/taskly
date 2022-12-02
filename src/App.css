@@ -224,9 +224,7 @@ width: 100%;
 
 .weekly {
   border: 1px solid black;
- 
 }
-
 
 .weekly__header {
 display: flex;
@@ -252,3 +250,9 @@ padding-bottom: 30px;
   color: rgba(244, 184, 96, 1);
 }
 
+.item__text-block {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
