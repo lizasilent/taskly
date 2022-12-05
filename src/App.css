@@ -217,10 +217,12 @@
 
 .weekly {
   border: 1px solid black;
+  margin: 0 0 60px;
 }
 
 .weekly__list-block {
   width: 100%;
+
 }
 
 .weekly__header {
