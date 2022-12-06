@@ -2,8 +2,12 @@ import React from "react";
 import logo from "../images/Logo2.png";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import useState from "react";
 
 function LeftMenu() {
+
+ 
+
   return (
     <div className="left">
       <div className="logo">
@@ -40,7 +44,10 @@ function LeftMenu() {
             </li>
           </ul>
         </div>
-        <Calendar />
+
+
+        <Calendar className="calendar" locale={"en-EN"} />
+
       </div>
     </div>
   );
