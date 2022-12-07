@@ -20,30 +20,17 @@ function LeftMenu() {
           <p className="weekly__header-small">View all</p>
         </div>
 
-        <div className="weekly__list-block">
-          <ul className="weekly__list">
-            <li className="weekly__item">
-              <div className="item__text-block">
-                <p>Call doctor for tests</p>
-                <p>15 Mar 2022 - 9:00 AM</p>
-              </div>
-            </li>
-
-            <li className="weekly__item">
-              <div className="item__text-block">
-                <p>Masmas’s bday</p>
-                <p>15 Mar 2022 - 9:00 AM</p>
-              </div>
-            </li>
-
-            <li className="weekly__item add">
-              <div className="item__text-block">
-                <p>Add new weekly pin</p>
-                <p></p>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <div className="list-block">
+        <ul className="list">
+          <li className="item">
+            <div className="item__icon">⏰</div>
+            <div className="weekly__item item__text-block">
+              <p className="weekly__text text_big">Call doctor for tests</p>
+              <p className="weekly__text text_small">9:00 AM</p>
+            </div>
+          </li>
+        </ul>
+      </div>
 
 
         <Calendar className="calendar" locale={"en-EN"} />

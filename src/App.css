@@ -41,6 +41,13 @@
   padding: 0 30px;
 }
 
+.middle__header-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .right {
   min-width: 20%;
   border: 1px solid black;
@@ -52,7 +59,6 @@
   justify-content: space-between;
   align-items: center;
 
-  
 }
 
 .middle__header p {
@@ -228,59 +234,7 @@
   margin: 0 0 60px;
 }
 
-.weekly__list-block {
-  width: 100%;
-}
-
-.weekly__header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 30px;
-}
-
-.weekly__header p {
-  margin: 0;
-}
-
-.weekly__header-big {
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.weekly__header-small {
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: bold;
-  color: rgba(244, 184, 96, 1);
-}
-
-.weekly__list {
-  list-style: none;
-  padding: 0;
-}
-
-.weekly__item {
-  display: flex;
-  padding: 30px;
-}
-
-.weekly__item::before {
-  content: "✅";
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #f8d57e;
-}
-
-.item__text-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.item__text-block p:first-of-type {
+.weekly_text.text_big {
   display: flex;
   font-size: 18px;
   line-height: 18px;
@@ -289,7 +243,7 @@
   margin: 0 28px 0 20px;
 }
 
-.item__text-block p:last-of-type {
+.weekly.text_small {
   display: flex;
   font-size: 14px;
   line-height: 14px;
@@ -298,19 +252,23 @@
   font-weight: normal;
 }
 
+.weekly__item.item__text-block {
+
+}
+
 .weekly__list li:last-of-type::before {
   content: "➕";
   border-radius: 10px;
   padding: 10px;
   background-color: #f8d57e;
-}
+} */
 
-.middle__list {
+.list {
   list-style: none;
   padding: 0;
 }
 
-.middle__item {
+.item {
   background-color: #f8d57e;
   border-radius: 10px;
   display: flex;
@@ -321,7 +279,7 @@
   padding: 20px 30px;
 }
 
-.middle__icon {
+.item__icon {
   border-radius: 10px;
   padding: 5px;
   background-color: white;
@@ -330,24 +288,17 @@
   margin-right: 20px;
 }
 
-.middle__text-block {
+.item__text-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
 }
 
-.middle__text-block p {
+.item__text-block p {
   margin-right: 30px;
   display: flex;
   margin: 0;
-}
-
-.middle__header-left {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .arrow-block {

@@ -29,25 +29,11 @@ function CenterMenu() {
        
       </div>
 
-      <div className="middle__list-block">
-        <ul className="middle__list">
-          <li className="middle__item">
-            <div className="middle__icon">⏰</div>
-            <div className="middle__text-block">
-              <p>Call doctor for tests</p>
-              <p>9:00 AM</p>
-            </div>
-          </li>
-          <li className="middle__item">
-            <div className="middle__icon">⏰</div>
-            <div className="middle__text-block">
-              <p>Call doctor for tests</p>
-              <p>9:00 AM</p>
-            </div>
-          </li>
-          <li className="middle__item">
-            <div className="middle__icon">⏰</div>
-            <div className="middle__text-block">
+      <div className="list-block">
+        <ul className="list">
+          <li className="item">
+            <div className="item__icon">⏰</div>
+            <div className="item__text-block">
               <p>Call doctor for tests</p>
               <p>9:00 AM</p>
             </div>
