@@ -16,19 +16,20 @@ function LeftMenu() {
 
       <div className="weekly">
         <div className="weekly__header">
-          <p className="weekly__header-big">Weekly Pinned</p>
-          <p className="weekly__header-small">View all</p>
+          <p className="weekly__header_big">Weekly Pinned</p>
+          <p className="weekly__header_small">View all</p>
         </div>
 
         <div className="list-block">
         <ul className="list">
-          <li className="item">
-            <div className="item__icon item__icon_weekly">⏰</div>
-            <div className="weekly__item item__text-block">
-              <p className="weekly__text text_big">Call doctor for tests</p>
-              <p className="weekly__text text_small">9:00 AM</p>
+          <li className="item" id="weekly">
+            <div className="item__icon" id="weekly">⏰</div>
+            <div className="item__text-block" id="weekly">
+              <p className="item__text_big" id="weekly">Call doctor for tests</p>
+              <p className="item__text_small" id="weekly">9:00 AM</p>
             </div>
           </li>
+          
         </ul>
       </div>
 
