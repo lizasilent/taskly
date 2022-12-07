@@ -49,6 +49,9 @@
 .middle__header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   
 }
 
@@ -338,4 +341,19 @@
   margin-right: 30px;
   display: flex;
   margin: 0;
+}
+
+.middle__header-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
 }

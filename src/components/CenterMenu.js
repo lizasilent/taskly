@@ -11,7 +11,7 @@ function CenterMenu() {
         <div>
         <p className="text">Today’s schedule</p>
 
-        <div className="">
+        <div className="middle__header-left">
           <p className="text yellow">Friday 28 oct</p>
           <div className ="arrow-block">
             <img src={arrowback} alt="back"></img>
