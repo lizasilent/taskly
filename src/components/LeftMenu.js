@@ -23,7 +23,7 @@ function LeftMenu() {
         <div className="list-block">
         <ul className="list">
           <li className="item">
-            <div className="item__icon">⏰</div>
+            <div className="item__icon item__icon_weekly">⏰</div>
             <div className="weekly__item item__text-block">
               <p className="weekly__text text_big">Call doctor for tests</p>
               <p className="weekly__text text_small">9:00 AM</p>
