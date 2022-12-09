@@ -21,7 +21,7 @@
 .page__content {
   margin: 0 auto;
   padding: 60px;
-  background-color: #f2f2f2;
+  background-color: white;
   border-radius: 30px;
   display: flex;
   flex-direction: row;
@@ -29,7 +29,6 @@
 
 .left {
   min-width: 357px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -37,7 +36,6 @@
 .middle {
   width: 40%;
   margin: 0 96px;
-  border: 1px solid black;
   padding: 0 30px;
 }
 
@@ -50,7 +48,6 @@
 
 .right {
   min-width: 20%;
-  border: 1px solid black;
 }
 
 .middle__header {
@@ -58,7 +55,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .middle__header p {
@@ -73,7 +69,6 @@
 }
 
 .user {
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -105,7 +100,6 @@
 }
 
 .music {
-  border: 1px solid black;
   height: 218px;
   margin-bottom: 19px;
   position: relative;
@@ -114,7 +108,6 @@
 .time {
   padding: 30px;
   margin-bottom: 19px;
-  border: 1px solid black;
   position: relative;
 }
 
@@ -160,7 +153,6 @@
 }
 
 .ads-info {
-  border: 1px solid black;
   height: 342px;
   padding: 30px 40px 0;
   text-align: left;
@@ -220,7 +212,6 @@
 .logo {
   display: flex;
   justify-content: left;
-  border: 1px solid black;
   padding-bottom: 70px;
 }
 
@@ -230,7 +221,6 @@
 }
 
 .weekly {
-  border: 1px solid black;
   margin: 0 0 60px;
 }
 
@@ -244,13 +234,13 @@
 .weekly__header_big {
   font-size: 24px;
   line-height: 24px;
-  color: #2C2543;
+  color: #2c2543;
 }
 
 .weekly__header_small {
   font-size: 14px;
   line-height: 14px;
-  color: #F4B860;
+  color: #f4b860;
 }
 
 #weekly.item__text_big {
@@ -270,7 +260,6 @@
   margin: 0;
   font-weight: normal;
 }
-
 
 .list {
   list-style: none;
@@ -305,11 +294,11 @@
 
 #weekly.item__icon {
   height: 45px;
-  width: 45px;
+  min-width: 45px;
   background-color: #f8d57e;
   text-align: center;
+  padding: 10px;
 }
-
 
 .item__text-block {
   display: flex;
@@ -317,7 +306,6 @@
   justify-content: space-between;
   width: 90%;
 }
-
 
 .item__text-block p {
   margin-right: 30px;
@@ -333,3 +321,6 @@
   margin-left: 40px;
 }
 
+.react-calendar {
+  border: none;
+}

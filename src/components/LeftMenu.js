@@ -1,12 +1,10 @@
 import React from "react";
 import logo from "../images/Logo2.png";
 import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
-import useState from "react";
+import "./Calendar.css";
+
 
 function LeftMenu() {
-
- 
 
   return (
     <div className="left">

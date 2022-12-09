@@ -31,7 +31,7 @@ function CenterMenu() {
 
 <div className="list-block">
         <ul className="list">
-        <li className="item" id="middle">
+        <li className="item active" id="middle">
             <div className="item__icon" id="middle">⏰</div>
             <div className="item__text-block" id="middle">
               <p className="item__text_big" id="middle">Call doctor for tests</p>
