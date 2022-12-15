@@ -1,5 +1,5 @@
 import React from "react";
-import "rightMenu.css";
+import "./rightMenu.css";
 
 function RightMenu() {
   const current = new Date();

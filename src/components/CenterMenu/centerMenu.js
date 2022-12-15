@@ -1,8 +1,8 @@
 import React from "react";
-import arrowback from "../images/back.png";
-import arrownext from "../images/front.png";
-import add from "../images/plus.png";
-import "centerMenu.css";
+import arrowback from "../../images/back.png";
+import arrownext from "../../images/front.png";
+import add from "../../images/plus.png";
+import "./centerMenu.css";
 
 function CenterMenu() {
   const current = new Date();

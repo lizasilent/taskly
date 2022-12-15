@@ -24,7 +24,7 @@
 }
 
 .user__logo {
-  background: url(./images/profile-pic.png) no-repeat;
+  background: url(../../images/profile-pic.png) no-repeat;
   height: 60px;
   width: 57px;
 }
@@ -42,7 +42,7 @@
 }
 
 .menu-icon {
-  background: url(./images/menu.png) center no-repeat;
+  background: url(../../images/menu.png) center no-repeat;
   min-height: 8px;
   width: 8px;
   margin-bottom: 10px;
@@ -69,7 +69,7 @@
 }
 
 .weather__icon {
-  background: url(./images/Weather.png) center no-repeat;
+  background: url(../../images/Weather.png) center no-repeat;
   height: 19px;
   width: 21px;
   margin-right: 10px;
@@ -92,7 +92,7 @@
 }
 
 .close-icon {
-  background: url(./images/Move.png) center no-repeat;
+  background: url(../../images/Move.png) center no-repeat;
   min-height: 8px;
   width: 8px;
   margin-bottom: 10px;
@@ -128,13 +128,13 @@
 }
 
 .ads-info__img-left {
-  background: url(./images/bust.png) no-repeat;
+  background: url(../../images/bust.png) no-repeat;
   height: 150px;
   min-width: 150px;
 }
 
 .ads-info__button {
-  background: url(./images/CTA.png) no-repeat;
+  background: url(../../images/CTA.png) no-repeat;
   height: 55px;
   min-width: 55px;
 }
