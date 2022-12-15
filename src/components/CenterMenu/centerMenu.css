@@ -25,13 +25,6 @@
   margin: 0;
 }
 
-.list-block_middle .item__icon {
-  height: 35px;
-  width: 35px;
-  padding: 5px;
-  background-color: white;
-}
-
 .arrow-block {
   display: flex;
   flex-direction: row;
