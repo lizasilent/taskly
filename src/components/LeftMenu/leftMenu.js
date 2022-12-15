@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../images/Logo2.png";
 import CalendarLeft from "../Calendar/calendar";
+import "leftMenu.css";
 // import arrowback from "../images/back.png";
 // import arrownext from "../images/front.png";
 

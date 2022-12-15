@@ -1,13 +1,15 @@
 import React from "react";
+import "layout.css";
+
 
 import LeftMenu from "../LeftMenu/leftMenu.js";
-import CenterMenu from "../CenterMenu/centerMenu";
+import CenterMenu from "../CenterMenu/centerMenu.js";
 import RightMenu from "../RightMenu/rightMenu.js";
 
-function Main() {
+function Layout() {
   return (
-    <div className="page">
-      <div className="page__content">
+    <div className="layout">
+      <div className="layout__content">
         <LeftMenu />
         <CenterMenu />
         <RightMenu />
@@ -16,4 +18,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Layout;

@@ -1,0 +1,61 @@
+.left {
+  min-width: 357px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  padding-bottom: 70px;
+}
+
+.logo__img {
+  height: 31px;
+  width: 100px;
+}
+
+.weekly__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weekly__header_big {
+  font-size: 24px;
+  line-height: 24px;
+  color: #2c2543;
+}
+
+.weekly__header_small {
+  font-size: 14px;
+  line-height: 14px;
+  color: #f4b860;
+}
+
+#weekly.item__text_big {
+  display: flex;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #2c2543;
+  margin: 0 28px 0 20px;
+}
+
+#weekly.item__text_small {
+  display: flex;
+  font-size: 14px;
+  line-height: 14px;
+  color: #2c2543;
+  margin: 0;
+  font-weight: normal;
+}
+
+#weekly.item__icon {
+  height: 45px;
+  min-width: 45px;
+  background-color: #f8d57e;
+  text-align: center;
+  padding: 10px;
+}

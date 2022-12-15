@@ -7,254 +7,20 @@
   box-sizing: border-box;
 }
 
-.App {
+.app {
   text-align: center;
-}
-
-.page {
-  min-width: 320px;
-  padding: 10px;
-  background-color: #f8d57e;
-  font-family: "Gilroy-Medium", Helvetica, Arial, sans-serif;
-}
-
-.page__content {
-  margin: 0 auto;
-  padding: 60px;
-  background-color: white;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: row;
-}
-
-.left {
-  min-width: 357px;
-  display: flex;
-  flex-direction: column;
-}
-
-.middle {
-  width: 40%;
-  margin: 0 96px;
-  padding: 0 30px;
-}
-
-.middle__header-left {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .right {
   min-width: 20%;
 }
 
-.middle__header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.middle__header p {
-  font-size: 36px;
-  line-height: 50px;
-  text-align: left;
-  margin: 0;
-}
-
 .yellow {
   color: #f4b860;
 }
 
-.user {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 100px;
-}
-
-.user__info {
-  text-align: left;
-}
-
-.user__name {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  margin: 0 0 6px 0;
-}
-
-.user__settings {
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.user__logo {
-  background: url(./images/profile-pic.png) no-repeat;
-  height: 60px;
-  width: 57px;
-}
-
-.music {
-  height: 218px;
-  margin-bottom: 19px;
-  position: relative;
-}
-
-.time {
-  padding: 30px;
-  margin-bottom: 19px;
-  position: relative;
-}
-
-.menu-icon {
-  background: url(./images/menu.png) center no-repeat;
-  min-height: 8px;
-  width: 8px;
-  margin-bottom: 10px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.menu-icon:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.time__description {
-  font-size: 40px;
-  line-height: 40px;
-  text-align: left;
-  margin: 0 0 23px;
-}
-
-.weather {
-  display: flex;
-  flex-direction: row;
-}
-
-.weather__icon {
-  background: url(./images/Weather.png) center no-repeat;
-  height: 19px;
-  width: 21px;
-  margin-right: 10px;
-}
-
-.weather__description {
-  font-size: 14px;
-  line-height: 14px;
-  text-align: left;
-  margin: 0;
-}
-
-.ads-info {
-  height: 342px;
-  padding: 30px 40px 0;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.close-icon {
-  background: url(./images/Move.png) center no-repeat;
-  min-height: 8px;
-  width: 8px;
-  margin-bottom: 10px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.close-icon:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.ads-info__header {
-  font-size: 26px;
-  font-weight: bold;
-  margin: 0 0 20px;
-  max-width: 190px;
-}
-
-.ads-info__text {
-  font-size: 14px;
-  margin: 0;
-  max-width: 190px;
-}
-
-.ads-info__images {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  position: relative;
-  width: 100%;
-}
-
-.ads-info__img-left {
-  background: url(./images/bust.png) no-repeat;
-  height: 150px;
-  min-width: 150px;
-}
-
-.ads-info__button {
-  background: url(./images/CTA.png) no-repeat;
-  height: 55px;
-  min-width: 55px;
-}
-
-.logo {
-  display: flex;
-  justify-content: left;
-  padding-bottom: 70px;
-}
-
-.logo__img {
-  height: 31px;
-  width: 100px;
-}
-
-.weekly__header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.weekly__header_big {
-  font-size: 24px;
-  line-height: 24px;
-  color: #2c2543;
-}
-
-.weekly__header_small {
-  font-size: 14px;
-  line-height: 14px;
-  color: #f4b860;
-}
-
-#weekly.item__text_big {
-  display: flex;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  color: #2c2543;
-  margin: 0 28px 0 20px;
-}
-
-#weekly.item__text_small {
-  display: flex;
-  font-size: 14px;
-  line-height: 14px;
-  color: #2c2543;
-  margin: 0;
-  font-weight: normal;
+.active {
+  background-color: #f8d57e;
 }
 
 .list-block {
@@ -276,28 +42,9 @@
   padding: 20px 30px;
 }
 
-.active {
-  background-color: #f8d57e;
-}
-
 .item__icon {
   border-radius: 10px;
   margin-right: 20px;
-}
-
-#middle.item__icon {
-  height: 35px;
-  width: 35px;
-  padding: 5px;
-  background-color: white;
-}
-
-#weekly.item__icon {
-  height: 45px;
-  min-width: 45px;
-  background-color: #f8d57e;
-  text-align: center;
-  padding: 10px;
 }
 
 .item__text-block {
@@ -311,16 +58,4 @@
   margin-right: 30px;
   display: flex;
   margin: 0;
-}
-
-.arrow-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 40px;
-}
-
-.react-calendar {
-  border: none;
 }

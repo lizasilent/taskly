@@ -1,0 +1,15 @@
+.layout {
+    min-width: 320px;
+    padding: 10px;
+    background-color: #f8d57e;
+    font-family: "Gilroy-Medium", Helvetica, Arial, sans-serif;
+  }
+  
+  .layout__content {
+    margin: 0 auto;
+    padding: 60px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+  }

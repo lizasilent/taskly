@@ -1,0 +1,140 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.user__info {
+  text-align: left;
+}
+
+.user__name {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  margin: 0 0 6px 0;
+}
+
+.user__settings {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.user__logo {
+  background: url(./images/profile-pic.png) no-repeat;
+  height: 60px;
+  width: 57px;
+}
+
+.music {
+  height: 218px;
+  margin-bottom: 19px;
+  position: relative;
+}
+
+.time {
+  padding: 30px;
+  margin-bottom: 19px;
+  position: relative;
+}
+
+.menu-icon {
+  background: url(./images/menu.png) center no-repeat;
+  min-height: 8px;
+  width: 8px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.time__description {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: left;
+  margin: 0 0 23px;
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+}
+
+.weather__icon {
+  background: url(./images/Weather.png) center no-repeat;
+  height: 19px;
+  width: 21px;
+  margin-right: 10px;
+}
+
+.weather__description {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: left;
+  margin: 0;
+}
+
+.ads-info {
+  height: 342px;
+  padding: 30px 40px 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.close-icon {
+  background: url(./images/Move.png) center no-repeat;
+  min-height: 8px;
+  width: 8px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.ads-info__header {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0 0 20px;
+  max-width: 190px;
+}
+
+.ads-info__text {
+  font-size: 14px;
+  margin: 0;
+  max-width: 190px;
+}
+
+.ads-info__images {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.ads-info__img-left {
+  background: url(./images/bust.png) no-repeat;
+  height: 150px;
+  min-width: 150px;
+}
+
+.ads-info__button {
+  background: url(./images/CTA.png) no-repeat;
+  height: 55px;
+  min-width: 55px;
+}
