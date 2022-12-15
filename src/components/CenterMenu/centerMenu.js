@@ -43,7 +43,7 @@ function CenterMenu() {
         </div>
       </div>
 
-      <List id={"middle"} active={"active"} />
+      <List theme={"middle"} active={"active"} />
     </div>
   );
 }

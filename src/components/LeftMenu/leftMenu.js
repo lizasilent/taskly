@@ -18,7 +18,7 @@ function LeftMenu() {
           <p className="weekly__header_small">View all</p>
         </div>
 
-        <List id={"weekly"} />
+        <List theme={"weekly"} />
         <CalendarLeft />
       </div>
     </div>

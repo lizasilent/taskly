@@ -34,7 +34,7 @@
   color: #f4b860;
 }
 
-#weekly.item__text_big {
+.list-block_weekly .item__text_big {
   display: flex;
   font-size: 18px;
   line-height: 18px;
@@ -43,7 +43,7 @@
   margin: 0 28px 0 20px;
 }
 
-#weekly.item__text_small {
+.list-block_weekly .item__text_small {
   display: flex;
   font-size: 14px;
   line-height: 14px;
@@ -52,7 +52,7 @@
   font-weight: normal;
 }
 
-#weekly.item__icon {
+.list-block_weekly .item__icon {
   height: 45px;
   min-width: 45px;
   background-color: #f8d57e;

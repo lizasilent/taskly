@@ -25,7 +25,7 @@
   margin: 0;
 }
 
-#middle.item__icon {
+.list-block_middle .item__icon {
   height: 35px;
   width: 35px;
   padding: 5px;

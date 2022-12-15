@@ -1,20 +1,21 @@
+import classNames from "classnames";
 import React from "react";
 import "./list.css"
 
-function List({id, active}) {
+function List({theme, active}) {
 
 return (
-    <div className="list-block">
+    <div className={classNames("list-block", `list-block_${theme}`)}>
     <ul className="list">
-      <li className="item" id={id}>
-        <div className="item__icon" id={id}>
+      <li className="item">
+        <div className="item__icon">
           ⏰
         </div>
-        <div className="item__text-block" id={id}>
-          <p className="item__text_big" id={id}>
+        <div className="item__text-block">
+          <p className="item__text_big">
             Call doctor for tests
           </p>
-          <p className="item__text_small" id={id}>
+          <p className="item__text_small">
             9:00 AM
           </p>
         </div>
