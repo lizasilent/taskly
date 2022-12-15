@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../images/Logo2.png";
-import Calendar from "react-calendar";
-import "./Calendar.css";
+import CalendarLeft from "../Calendar/calendar";
 // import arrowback from "../images/back.png";
 // import arrownext from "../images/front.png";
 
@@ -34,7 +33,7 @@ function LeftMenu() {
         </ul>
       </div>
 
-        <Calendar className="calendar" showFixedNumberOfWeeks={false} locale={"en-EN"} />
+        <CalendarLeft/>
 
       </div>
     </div>

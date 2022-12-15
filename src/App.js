@@ -1,12 +1,12 @@
-import './App.css';
-import Main from "./components/Main";
+import './app.css';
+import Layout from "./components/Layout/layout";
 // import options from "./api/musicApi";
 
 function App() {
   return (
 
     <div className="App">      
-          <Main />
+          <Layout />
           </div>
         
   );

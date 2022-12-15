@@ -1,8 +1,8 @@
 import React from "react";
 
-import LeftMenu from "./LeftMenu";
-import CenterMenu from "./CenterMenu";
-import RightMenu from "./RightMenu";
+import LeftMenu from "../LeftMenu/leftMenu.js";
+import CenterMenu from "../CenterMenu/centerMenu";
+import RightMenu from "../RightMenu/rightMenu.js";
 
 function Main() {
   return (
