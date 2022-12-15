@@ -1,0 +1,36 @@
+.list-block {
+  margin-bottom: 100px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 10px;
+  padding: 20px 30px;
+}
+
+.item__icon {
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.item__text-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.item__text-block p {
+  margin-right: 30px;
+  display: flex;
+  margin: 0;
+}

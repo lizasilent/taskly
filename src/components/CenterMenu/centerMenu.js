@@ -4,6 +4,8 @@ import arrownext from "../../images/front.png";
 import add from "../../images/plus.png";
 import "./centerMenu.css";
 
+import List from "../List/list";
+
 function CenterMenu() {
   const current = new Date();
 
@@ -41,23 +43,7 @@ function CenterMenu() {
         </div>
       </div>
 
-      <div className="list-block">
-        <ul className="list">
-          <li className="item active" id="middle">
-            <div className="item__icon" id="middle">
-              ⏰
-            </div>
-            <div className="item__text-block" id="middle">
-              <p className="item__text_big" id="middle">
-                Call doctor for tests
-              </p>
-              <p className="item__text_small" id="middle">
-                9:00 AM
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <List id={"middle"} active={"active"} />
     </div>
   );
 }

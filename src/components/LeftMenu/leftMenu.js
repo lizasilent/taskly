@@ -2,10 +2,8 @@ import React from "react";
 import "./leftMenu.css";
 import logo from "../../images/Logo2.png";
 
+import List from "../List/list";
 import CalendarLeft from "../Calendar/calendar";
-
-// import arrowback from "../images/back.png";
-// import arrownext from "../images/front.png";
 
 function LeftMenu() {
   return (
@@ -20,24 +18,7 @@ function LeftMenu() {
           <p className="weekly__header_small">View all</p>
         </div>
 
-        <div className="list-block">
-          <ul className="list">
-            <li className="item" id="weekly">
-              <div className="item__icon" id="weekly">
-                ⏰
-              </div>
-              <div className="item__text-block" id="weekly">
-                <p className="item__text_big" id="weekly">
-                  Call doctor for tests
-                </p>
-                <p className="item__text_small" id="weekly">
-                  9:00 AM
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
+        <List id={"weekly"} />
         <CalendarLeft />
       </div>
     </div>
