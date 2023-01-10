@@ -19,6 +19,7 @@ function LeftMenu() {
         </div>
 
         <List theme={"weekly"} />
+        
         <CalendarLeft />
       </div>
     </div>

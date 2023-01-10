@@ -5,6 +5,7 @@ import add from "../../images/plus.png";
 import "./centerMenu.css";
 
 import List from "../List/list";
+import Form from "../Form/form";
 
 function CenterMenu() {
   const current = new Date();

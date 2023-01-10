@@ -10,7 +10,7 @@ import Weather from "../Weather/weather";
 
 
 function RightMenu() {
-  
+
 
   return (
     <div className="right">
@@ -19,6 +19,7 @@ function RightMenu() {
       {/* <Music/>  */}
       <Time/>
       <Weather />
+
       <Ads/>
 
     </div>

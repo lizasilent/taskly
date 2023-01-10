@@ -10,14 +10,14 @@ function Time() {
     hour: "2-digit",
     minute: "2-digit",}));
 
-  const newTime = () => {
+  const updateTime = () => {
     setTime(new Date().toLocaleTimeString("en-US", {
       hour: "2-digit",
       minute: "2-digit",}))
       }
   
   useEffect(() => {
-    setInterval(newTime, "10000")
+    setInterval(updateTime, "40000")
   });
 
 

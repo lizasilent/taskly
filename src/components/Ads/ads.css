@@ -54,3 +54,7 @@
   height: 55px;
   min-width: 55px;
 }
+
+.disable {
+  display:none
+}
