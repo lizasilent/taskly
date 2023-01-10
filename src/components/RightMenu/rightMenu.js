@@ -5,7 +5,7 @@ import "./rightMenu.css";
 import Time from "../Time/time";
 import User from "../User/user";
 import Ads from "../Ads/ads";
-
+import Weather from "../Weather/weather";
 
 
 
@@ -18,6 +18,7 @@ function RightMenu() {
       <User/>
       {/* <Music/>  */}
       <Time/>
+      <Weather />
       <Ads/>
 
     </div>
