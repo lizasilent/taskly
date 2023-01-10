@@ -1,6 +1,9 @@
 import React from "react";
 import "./rightMenu.css";
 
+
+
+
 function RightMenu() {
   const current = new Date();
   const time = current.toLocaleTimeString("en-US", {
