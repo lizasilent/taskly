@@ -13,7 +13,7 @@ function Ads() {
   return (
     <>
     {
-      activity ? (
+      activity && (
 
         <div className="ads-info">
         <div className="close-icon" onClick={handlePopup}></div>
@@ -29,7 +29,7 @@ function Ads() {
           <div className="ads-info__button"></div>
         </div>
       </div>
-      ) : ""
+      ) 
     }
 </>
   );
