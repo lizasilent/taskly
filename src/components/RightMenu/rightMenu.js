@@ -7,21 +7,14 @@ import User from "../User/user";
 import Ads from "../Ads/ads";
 import Weather from "../Weather/weather";
 
-
-
 function RightMenu() {
-
-
   return (
     <div className="right">
-      
-      <User/>
+      <User />
       {/* <Music/>  */}
-      <Time/>
+      <Time />
       <Weather />
-
-      <Ads/>
-
+      <Ads />
     </div>
   );
 }
