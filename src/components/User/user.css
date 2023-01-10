@@ -1,0 +1,30 @@
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  
+  .user__info {
+    text-align: left;
+  }
+  
+  .user__name {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+  }
+  
+  .user__settings {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .user__logo {
+    background: url(../../images/profile-pic.png) no-repeat;
+    height: 60px;
+    width: 57px;
+  }
