@@ -7,6 +7,8 @@ import List from "../List/list";
 // import Form from "../Form/form";
 import DateBlock from "../Date/date";
 
+
+
 function CenterMenu() {
   return (
     <div className="middle">
@@ -17,8 +19,10 @@ function CenterMenu() {
         </div>
 
         <div>
-          <img src={add} alt="plus"></img>
+          <img className="plus" src={add} alt="plus"></img>
         </div>
+
+
       </div>
 
       <List theme={"middle"} active={"active"} />

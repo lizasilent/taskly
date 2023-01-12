@@ -8,6 +8,7 @@ function DateBlock() {
   const current = new Date();
 
   const date = current.getDate();
+
   const daysOfWeek = [
     "Sunday",
     "Monday",
@@ -20,11 +21,27 @@ function DateBlock() {
 
   const weekDay = daysOfWeek[current.getDay()];
 
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  const month = months[current.getMonth()];
+
   return (
     <div className="middle__header-left">
       <p className="text yellow">
-      {weekDay} {date}{" "}
-
+        {`${month}, ${weekDay} ${date}`}
       </p>
       <div className="arrow-block">
         <img src={arrowback} alt="back"></img>
