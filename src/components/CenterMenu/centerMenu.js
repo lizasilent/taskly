@@ -14,6 +14,10 @@ function CenterMenu() {
     setActive(!active);
   }
 
+  function handleAddTodo(data) {
+    console.log(data);
+  }
+
   return (
     <div className="middle">
       <div className="middle__header">
@@ -26,7 +30,7 @@ function CenterMenu() {
           <img className="plus" src={add} alt="plus" onClick={handleForm}></img>
         </div>
       </div>
-      {active && <Form />}
+      {active && <Form onAddTodo={handleAddTodo} />}
 
       <List theme={"middle"} active={"active"} />
     </div>
