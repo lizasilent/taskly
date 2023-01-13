@@ -3,7 +3,7 @@ import { React, useState } from "react";
 import add from "../../images/plus.png";
 import "./centerMenu.css";
 
-import List from "../TodoList/todolist";
+import TodoList from "../TodoList/todolist";
 import Form from "../Form/form";
 import DateBlock from "../Date/date";
 
@@ -14,9 +14,11 @@ function CenterMenu() {
     setActive(!active);
   }
 
-  function handleAddTodo(data) {
-    console.log(data);
-  }
+  const [list, setList] = useState([]);
+
+function addTodoItem (item) {
+    setList((prevList) => [...prevList, item]);
+    };
 
   return (
     <div className="middle">
@@ -30,9 +32,9 @@ function CenterMenu() {
           <img className="plus" src={add} alt="plus" onClick={handleForm}></img>
         </div>
       </div>
-      {active && <Form onAddTodo={handleAddTodo} />}
+      {active && <Form onAddTodo={addTodoItem} />}
 
-      <List theme={"middle"} active={"active"} />
+      <TodoList theme={"middle"} active={"active"} list={list} />
     </div>
   );
 }

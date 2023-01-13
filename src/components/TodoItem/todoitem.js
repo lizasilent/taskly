@@ -3,7 +3,7 @@ import React from "react";
 import "./todoitem.css"
 
 
-function TodoItem({theme, active}) {
+function TodoItem() {
 
 
 return(
