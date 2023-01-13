@@ -1,4 +1,9 @@
 
+.right{
+  margin: 20px 0;
+  min-width: 20%;
+}
+
 .menu-icon {
   background: url(../../images/menu.png) center no-repeat;
   min-height: 8px;

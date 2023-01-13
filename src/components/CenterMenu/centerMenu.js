@@ -4,10 +4,8 @@ import add from "../../images/plus.png";
 import "./centerMenu.css";
 
 import List from "../List/list";
-// import Form from "../Form/form";
+import Form from "../Form/form";
 import DateBlock from "../Date/date";
-
-
 
 function CenterMenu() {
   return (
@@ -21,10 +19,8 @@ function CenterMenu() {
         <div>
           <img className="plus" src={add} alt="plus"></img>
         </div>
-
-
       </div>
-
+      <Form />
       <List theme={"middle"} active={"active"} />
     </div>
   );

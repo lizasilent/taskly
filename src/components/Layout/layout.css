@@ -7,10 +7,15 @@
   
   .layout__content {
     margin: 0 auto;
-    padding: 60px;
+    padding: 2% 3%;
     background-color: white;
     border-radius: 30px;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  /* @media screen and (max-width: 900px) {
+    
+  } */
