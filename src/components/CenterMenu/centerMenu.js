@@ -3,7 +3,7 @@ import { React, useState } from "react";
 import add from "../../images/plus.png";
 import "./centerMenu.css";
 
-import List from "../List/list";
+import List from "../TodoList/todolist";
 import Form from "../Form/form";
 import DateBlock from "../Date/date";
 

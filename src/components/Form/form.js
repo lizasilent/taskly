@@ -10,7 +10,6 @@ function Form({onAddTodo}) {
 
    function handleSubmit(e) {
     e.preventDefault();
-
     onAddTodo({
         name: textRef.current.value,
         time: timeRef.current.value,

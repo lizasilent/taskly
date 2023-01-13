@@ -2,8 +2,8 @@ import React from "react";
 import "./leftMenu.css";
 import logo from "../../images/Logo2.png";
 
-import List from "../List/list";
 import CalendarLeft from "../Calendar/calendar";
+import TodoList from "../TodoList/todolist";
 
 function LeftMenu() {
   return (
@@ -18,7 +18,7 @@ function LeftMenu() {
           <p className="weekly__header_small">View all</p>
         </div>
 
-        <List theme={"weekly"} />
+        <TodoList theme={"weekly"} />
         
         <CalendarLeft />
       </div>
