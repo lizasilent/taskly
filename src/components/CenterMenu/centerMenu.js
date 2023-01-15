@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 
 import add from "../../images/plus.png";
 import "./centerMenu.css";
@@ -14,11 +14,16 @@ function CenterMenu() {
     setActive(!active);
   }
 
-  const [list, setList] = useState([]);
+  const [todo, setTodo] = useState({text:"", time:"", timeofday:""});
+  const [todos, setTodos] = useState([]);
 
-function addTodoItem (item) {
-    setList((prevList) => [...prevList, item]);
-    };
+  function addTodo() {
+  setTodos([...todos, todo])
+  setTodo({})
+  }
+
+
+
 
   return (
     <div className="middle">
@@ -32,9 +37,12 @@ function addTodoItem (item) {
           <img className="plus" src={add} alt="plus" onClick={handleForm}></img>
         </div>
       </div>
-      {active && <Form onAddTodo={addTodoItem} />}
+      {/* {active && <Form/>} */}
 
-      <TodoList theme={"middle"} active={"active"} list={list} />
+      <Form todo={todo} setTodo={setTodo} addTodo={addTodo}  />
+      <TodoList />
+      
+
     </div>
   );
 }

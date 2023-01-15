@@ -1,38 +1,47 @@
 import { React } from "react";
 import "./form.css";
 
-function Form({onAddTodo}) {
- 
-  const textRef = React.useRef();
-  const timeRef = React.useRef();
-  const timeOfDayRef = React.useRef();
-
-
-   function handleSubmit(e) {
+function Form({ todo, setTodo, addTodo }) {
+  function handleSubmit(e) {
     e.preventDefault();
-    onAddTodo({
-        name: textRef.current.value,
-        time: timeRef.current.value,
-        timeofday: timeOfDayRef.current.value,
+    addTodo({
+      text: todo.text,
+      time: todo.time,
+      timeofday: todo.timeofday,
     });
-   }
+  }
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <input ref={textRef}
+      <input
         className="form__input_text"
         type="text"
         name="name"
         placeholder="Your task"
+        value={todo.text}
+        onChange={(e) => {
+          setTodo(e.target.value);
+        }}
       />
-      <input ref={timeRef}
+      <input
         className="form__input_time"
         type="text"
         name="time"
         placeholder="Time"
         maxLength="5"
+        value={todo.time}
+        onChange={(e) => {
+          setTodo(e.target.value);
+        }}
       />
-      <select ref={timeOfDayRef} className="form__input_time" name="timeofday">
+      <select
+        className="form__input_time"
+        name="timeofday"
+        value={todo.timeofday}
+        onChange={(e) => {
+          setTodo(e.target.value);
+        }}
+      >
         <option>AM</option>
         <option>PM</option>
       </select>

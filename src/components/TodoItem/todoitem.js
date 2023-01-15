@@ -1,4 +1,4 @@
-import classNames from "classnames";
+// import classNames from "classnames";
 import React from "react";
 import "./todoitem.css"
 
@@ -8,7 +8,7 @@ function TodoItem() {
 
 return(
 
-    <li className="item">
+    <li className="item" >
     <div className="item__icon">
       ⏰
     </div>
