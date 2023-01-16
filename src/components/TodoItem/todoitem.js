@@ -21,19 +21,6 @@ return(
       </p>
     </div>
   </li>
-  <li className="item">
-  <div className="item__icon">
-    ⏰
-  </div>
-  <div className="item__text-block">
-    <p className="item__text_big">
-     Текст
-    </p>
-    <p className="item__text_small">
-      11:11 AM
-    </p>
-  </div>
-</li>
 </>
    
 

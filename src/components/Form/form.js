@@ -5,13 +5,14 @@ function Form({ todo, setTodo, addTodo }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+      console.log(todo);
+
     addTodo({
       text: todo.text,
       time: todo.time,
       timeofday: todo.timeofday,
     });
   }
-
 
 
 
@@ -22,6 +23,7 @@ function Form({ todo, setTodo, addTodo }) {
         type="text"
         name="text"
         placeholder="Your task"
+        required
         onChange={(e) => {
           setTodo({text:e.target.value});
         }}
@@ -31,6 +33,7 @@ function Form({ todo, setTodo, addTodo }) {
         type="text"
         name="time"
         placeholder="Time"
+        required
         maxLength="5"
         onChange={(e) => {
           setTodo({time: e.target.value});
@@ -40,7 +43,7 @@ function Form({ todo, setTodo, addTodo }) {
         className="form__input_time"
         name="timeofday"
         onChange={(e) => {
-          setTodo({timeofday:e.target.value});
+          setTodo({timeofday: e.target.value});
         }}
       >
         <option>AM</option>
