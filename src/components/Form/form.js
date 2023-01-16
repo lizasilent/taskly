@@ -2,6 +2,7 @@ import { React } from "react";
 import "./form.css";
 
 function Form({ todo, setTodo, addTodo }) {
+
   function handleSubmit(e) {
     e.preventDefault();
     addTodo({
@@ -11,16 +12,18 @@ function Form({ todo, setTodo, addTodo }) {
     });
   }
 
+
+
+
   return (
     <form className="form" onSubmit={handleSubmit}>
       <input
         className="form__input_text"
         type="text"
-        name="name"
+        name="text"
         placeholder="Your task"
-        value={todo.text}
         onChange={(e) => {
-          setTodo(e.target.value);
+          setTodo({text:e.target.value});
         }}
       />
       <input
@@ -29,17 +32,15 @@ function Form({ todo, setTodo, addTodo }) {
         name="time"
         placeholder="Time"
         maxLength="5"
-        value={todo.time}
         onChange={(e) => {
-          setTodo(e.target.value);
+          setTodo({time: e.target.value});
         }}
       />
       <select
         className="form__input_time"
         name="timeofday"
-        value={todo.timeofday}
         onChange={(e) => {
-          setTodo(e.target.value);
+          setTodo({timeofday:e.target.value});
         }}
       >
         <option>AM</option>

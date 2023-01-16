@@ -3,7 +3,7 @@ import "./leftMenu.css";
 import logo from "../../images/Logo2.png";
 
 import CalendarLeft from "../Calendar/calendar";
-import TodoList from "../TodoList/todolist";
+// import TodoList from "../TodoList/todolist";
 
 function LeftMenu() {
   return (
@@ -18,7 +18,7 @@ function LeftMenu() {
           <p className="weekly__header_small">View all</p>
         </div>
 
-        <TodoList theme={"weekly"} />
+        {/* <TodoList theme={"weekly"} /> */}
         
         <CalendarLeft />
       </div>
