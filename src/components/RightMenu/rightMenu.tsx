@@ -2,10 +2,10 @@ import React from "react";
 import "./rightMenu.css";
 
 // import Music from "../Music/music";
-import Time from "../Time/time";
-import User from "../User/user";
-import Ads from "../Ads/ads";
-import Weather from "../Weather/weather";
+import Time from "../Time/Time";
+import User from "../User/User";
+import Ads from "../Ads/Ads";
+import Weather from "../Weather/Weather";
 
 function RightMenu() {
   return (

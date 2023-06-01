@@ -8,7 +8,7 @@ function CalendarLeft() {
       <Calendar
         className="calendar"
         showFixedNumberOfWeeks={false}
-        locale={'en-EN'}
+        locale="en-EN"
       />
     </div>
   );

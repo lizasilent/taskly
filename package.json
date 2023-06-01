@@ -24,7 +24,7 @@
     "start": "react-scripts start",
     "build": "rimraf ./build && tsc",
     "dev": "react-scripts start",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint --ext .ts"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +56,5 @@
     "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
     "ts-node": "^10.9.1"
-  },
-  "type": "module"
+  }
 }

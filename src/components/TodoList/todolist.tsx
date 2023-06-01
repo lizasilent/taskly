@@ -1,7 +1,7 @@
 import React from 'react';
 import './todolist.css';
 
-import TodoItem from '../TodoItem/todoitem';
+import TodoItem from '../TodoItem';
 
 function TodoList({ todos }) {
   // let key = Math.floor(Math.random() * 101);

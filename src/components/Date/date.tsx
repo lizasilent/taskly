@@ -1,8 +1,5 @@
-import React from "react";
-
-import "./date.css";
-import arrowback from "../../images/back.png";
-import arrownext from "../../images/front.png";
+import React from 'react';
+import './date.css';
 
 function DateBlock() {
   const current = new Date();
@@ -10,42 +7,40 @@ function DateBlock() {
   const date = current.getDate();
 
   const daysOfWeek = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
   ];
 
   const weekDay = daysOfWeek[current.getDay()];
 
-  let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+  const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
   ];
 
   const month = months[current.getMonth()];
 
   return (
     <div className="middle__header-left">
-      <p className="text yellow">
-        {`${month}, ${weekDay} ${date}`}
-      </p>
+      <p className="text yellow">{`${month}, ${weekDay} ${date}`}</p>
       <div className="arrow-block">
-        <img src={arrowback} alt="back"></img>
-        <img src={arrownext} alt="next"></img>
+        <img src="images/back.png" alt="back" />
+        <img src="images/front.png" alt="next" />
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
+/* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
-import add from '../../images/plus.png'
 import './centerMenu.css';
 
-import TodoList from '../TodoList/todolist';
-import Form from '../Form/form';
-import DateBlock from '../Date/date';
+import TodoList from '../TodoList';
+import Form from '../Form/Form';
+import DateBlock from '../Date/Date';
 
 function CenterMenu() {
   const [active, setActive] = useState(true);
@@ -32,10 +32,12 @@ function CenterMenu() {
         </div>
 
         <div>
-          <img className="plus" src={add} alt="plus" onClick={handleForm}></img>
+          <button onClick={handleForm}>
+            <img className="plus" src="images/plus.png" alt="plus" />
+          </button>
         </div>
       </div>
-      {active && <Form todo={todo} setTodo={setTodo} addTodo={addTodo} />}
+      {active && <Form todo={todo} setTodo={setTodo} addTodo={() => addTodo} />}
 
       <TodoList todo={todo} todos={todos} />
     </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import './layout.css';
 
-import LeftMenu from '../LeftMenu/leftMenu';
-import CenterMenu from '../CenterMenu/centerMenu';
-import RightMenu from '../RightMenu/rightMenu';
+import LeftMenu from '../LeftMenu';
+import CenterMenu from '../CenterMenu';
+import RightMenu from '../RightMenu';
 
 function Layout() {
   return (

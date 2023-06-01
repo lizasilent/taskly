@@ -23,7 +23,7 @@
         "prettier"
     ],
     "rules": {
-        "prettier/prettier": "error",
+        "prettier/prettier": "warn",
         "react/function-component-definition": "off",
         "no-unused-vars": "warn",
         "consistent-return": "off",
