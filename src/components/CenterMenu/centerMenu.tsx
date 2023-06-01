@@ -39,7 +39,7 @@ function CenterMenu() {
       </div>
       {active && <Form todo={todo} setTodo={setTodo} addTodo={() => addTodo} />}
 
-      <TodoList todo={todo} todos={todos} />
+      <TodoList todos={todos} />
     </div>
   );
 }

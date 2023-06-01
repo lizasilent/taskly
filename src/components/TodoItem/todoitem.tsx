@@ -1,9 +1,14 @@
 import React from 'react';
 import './todoitem.css';
+import { Todo } from 'types/types';
 
-function TodoItem({ index, todo }) {
+interface Props {
+  todo: Todo;
+}
+
+function TodoItem({ todo }: Props) {
   return (
-    <li className="item" id={index}>
+    <li className="item">
       <div className="item__icon">⏰</div>
       <div className="item__text-block">
         <p className="item__text_big">{todo.text}</p>

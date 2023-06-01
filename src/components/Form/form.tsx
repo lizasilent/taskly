@@ -1,7 +1,14 @@
 import React from 'react';
 import './form.css';
+import { Todo, Todos } from 'types/types';
 
-function Form({ todo, setTodo, addTodo }) {
+interface Props {
+  todo: Todo;
+  setTodo: (e: Event) => Todo;
+  addTodo: (todo: Todo) => Todos;
+}
+
+function Form({ todo, setTodo, addTodo }: Props) {
   function handleSubmit(e: Event) {
     e.preventDefault();
     console.log(todo);
@@ -14,7 +21,7 @@ function Form({ todo, setTodo, addTodo }) {
   }
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
+    <form className="form" onSubmit={() => handleSubmit}>
       <input
         className="form__input_text"
         type="text"
@@ -31,7 +38,7 @@ function Form({ todo, setTodo, addTodo }) {
         name="time"
         placeholder="Time"
         required
-        maxLength="5"
+        maxLength={5}
         onChange={e => {
           setTodo({ time: e.target.value });
         }}

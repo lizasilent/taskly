@@ -1,16 +1,17 @@
 import React from 'react';
 import './todolist.css';
 
+import { Todos } from 'types/types';
 import TodoItem from '../TodoItem';
 
-function TodoList({ todos }) {
-  // let key = Math.floor(Math.random() * 101);
+function TodoList({ todos }: Todos) {
+  const key = Math.floor(Math.random() * 101);
 
   return (
     <div className="list-block">
       <ul className="list">
         {todos.map(todo => (
-          <TodoItem index={todos.length} todo={todo} />
+          <TodoItem key={key} todo={todo} />
         ))}
       </ul>
     </div>

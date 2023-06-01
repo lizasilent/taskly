@@ -1,5 +1,5 @@
-import React from "react";
-import "./user.css";
+import React from 'react';
+import './user.css';
 
 function User() {
   return (
@@ -8,7 +8,7 @@ function User() {
         <p className="user__name">Lizaveta Silent</p>
         <p className="user__settings yellow">My settings</p>
       </div>
-      <div className="user__logo"></div>
+      <div className="user__logo" />
     </div>
   );
 }
