@@ -1,18 +1,15 @@
-import React from "react";
-import "./todolist.css";
+import React from 'react';
+import './todolist.css';
 
-import TodoItem from "../TodoItem/todoitem";
+import TodoItem from '../TodoItem/todoitem';
 
-function TodoList({todos}) {
+function TodoList({ todos }) {
   // let key = Math.floor(Math.random() * 101);
 
   return (
     <div className="list-block">
-      
       <ul className="list">
-        {
-        
-        todos.map((todo) => (
+        {todos.map(todo => (
           <TodoItem index={todos.length} todo={todo} />
         ))}
       </ul>

@@ -1,11 +1,10 @@
-import { React, useState } from "react";
+import React, { useState } from 'react';
+import add from '../../images/plus.png'
+import './centerMenu.css';
 
-import add from "../../images/plus.png";
-import "./centerMenu.css";
-
-import TodoList from "../TodoList/todolist";
-import Form from "../Form/form";
-import DateBlock from "../Date/date";
+import TodoList from '../TodoList/todolist';
+import Form from '../Form/form';
+import DateBlock from '../Date/date';
 
 function CenterMenu() {
   const [active, setActive] = useState(true);
@@ -14,13 +13,13 @@ function CenterMenu() {
     setActive(!active);
   }
 
-  const [todo, setTodo] = useState({ text: "", time: "", timeofday: "" });
+  const [todo, setTodo] = useState({ text: '', time: '', timeofday: '' });
   const [todos, setTodos] = useState([]);
 
   function addTodo() {
     if (todo) {
       setTodos([...todos, todo]);
-      setTodo({ text: "", time: "", timeofday: "" });
+      setTodo({ text: '', time: '', timeofday: '' });
     }
   }
 

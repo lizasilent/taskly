@@ -1,11 +1,10 @@
-import { React } from "react";
-import "./form.css";
+import React from 'react';
+import './form.css';
 
 function Form({ todo, setTodo, addTodo }) {
-
-  function handleSubmit(e) {
+  function handleSubmit(e: Event) {
     e.preventDefault();
-      console.log(todo);
+    console.log(todo);
 
     addTodo({
       text: todo.text,
@@ -13,8 +12,6 @@ function Form({ todo, setTodo, addTodo }) {
       timeofday: todo.timeofday,
     });
   }
-
-
 
   return (
     <form className="form" onSubmit={handleSubmit}>
@@ -24,8 +21,8 @@ function Form({ todo, setTodo, addTodo }) {
         name="text"
         placeholder="Your task"
         required
-        onChange={(e) => {
-          setTodo({text:e.target.value});
+        onChange={e => {
+          setTodo({ text: e.target.value });
         }}
       />
       <input
@@ -35,15 +32,15 @@ function Form({ todo, setTodo, addTodo }) {
         placeholder="Time"
         required
         maxLength="5"
-        onChange={(e) => {
-          setTodo({time: e.target.value});
+        onChange={e => {
+          setTodo({ time: e.target.value });
         }}
       />
       <select
         className="form__input_time"
         name="timeofday"
-        onChange={(e) => {
-          setTodo({timeofday: e.target.value});
+        onChange={e => {
+          setTodo({ timeofday: e.target.value });
         }}
       >
         <option>AM</option>

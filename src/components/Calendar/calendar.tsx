@@ -1,5 +1,6 @@
-import "./calendar.css";
-import Calendar from "react-calendar";
+import React from 'react';
+import './calendar.css';
+import Calendar from 'react-calendar';
 
 function CalendarLeft() {
   return (
@@ -7,7 +8,7 @@ function CalendarLeft() {
       <Calendar
         className="calendar"
         showFixedNumberOfWeeks={false}
-        locale={"en-EN"}
+        locale={'en-EN'}
       />
     </div>
   );
