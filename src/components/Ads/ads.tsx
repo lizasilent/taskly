@@ -11,22 +11,26 @@ function Ads() {
   }
 
   return (
-    activity && (
-      <div className="ads-info">
-        <button className="close-icon" onClick={handlePopup} />
-        <div>
-          <p className="ads-info__header">Unleash the freelance super power</p>
-          <p className="ads-info__text">
-            Unlimited task, premium features and much more.
-          </p>
-        </div>
+    <div>
+      {activity && (
+        <div className="ads-info">
+          <button className="close-icon" onClick={handlePopup} />
+          <div>
+            <p className="ads-info__header">
+              Unleash the freelance super power
+            </p>
+            <p className="ads-info__text">
+              Unlimited task, premium features and much more.
+            </p>
+          </div>
 
-        <div className="ads-info__images">
-          <div className="ads-info__img-left" />
-          <div className="ads-info__button" />
+          <div className="ads-info__images">
+            <div className="ads-info__img-left" />
+            <div className="ads-info__button" />
+          </div>
         </div>
-      </div>
-    )
+      )}
+    </div>
   );
 }
 

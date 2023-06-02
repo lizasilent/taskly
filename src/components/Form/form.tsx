@@ -28,7 +28,7 @@ function Form({ todo, setTodo, addTodo }: Props) {
         name="text"
         placeholder="Your task"
         required
-        onChange={e => {
+        onChange={(e: EventTarget) => {
           setTodo({ text: e.target.value });
         }}
       />

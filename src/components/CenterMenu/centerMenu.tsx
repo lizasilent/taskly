@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './centerMenu.css';
 
+import { Todo, Todos } from 'types/types';
 import TodoList from '../TodoList';
 import Form from '../Form/Form';
 import DateBlock from '../Date/Date';
@@ -14,11 +15,11 @@ function CenterMenu() {
   }
 
   const [todo, setTodo] = useState({ text: '', time: '', timeofday: '' });
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState<Todos>([]);
 
-  function addTodo() {
-    if (todo) {
-      setTodos([...todos, todo]);
+  function addTodo(newTodo: Todo) {
+    if (newTodo) {
+      setTodos([...todos, newTodo]);
       setTodo({ text: '', time: '', timeofday: '' });
     }
   }

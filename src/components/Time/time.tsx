@@ -19,7 +19,7 @@ function Time() {
   };
 
   useEffect(() => {
-    setInterval(updateTime, '40000');
+    setInterval(updateTime, 40000);
   });
 
   return (
