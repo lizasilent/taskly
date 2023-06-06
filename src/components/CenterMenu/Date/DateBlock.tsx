@@ -1,4 +1,7 @@
 import React from 'react';
+import { daysOfWeek, months } from 'components/constants/dates';
+import back from '../../../images/back.png';
+import forward from '../../../images/front.png';
 import './dateBlock.css';
 
 function DateBlock() {
@@ -6,32 +9,7 @@ function DateBlock() {
 
   const date = current.getDate();
 
-  const daysOfWeek = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ];
-
   const weekDay = daysOfWeek[current.getDay()];
-
-  const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
 
   const month = months[current.getMonth()];
 
@@ -39,8 +17,8 @@ function DateBlock() {
     <div className="middle__header-left">
       <p className="text yellow">{`${month}, ${weekDay} ${date}`}</p>
       <div className="arrow-block">
-        <img src="images/back.png" alt="back" />
-        <img src="images/front.png" alt="next" />
+        <img src={back} alt="back" />
+        <img src={forward} alt="next" />
       </div>
     </div>
   );

@@ -1,15 +1,14 @@
-import React, { ChangeEvent } from 'react';
+import React from 'react';
 import './form.css';
 import { Todo, Todos } from 'types/types';
 
 interface Props {
   todo: Todo;
-  setTodo: (e: Event) => Todo;
   addTodo: (todo: Todo) => Todos;
 }
 
-function Form({ todo, setTodo, addTodo }: Props) {
-  function handleSubmit(e: Event) {
+function Form({ todo, addTodo }: Props) {
+  const handleSubmit = (e: Event) => {
     e.preventDefault();
     console.log(todo);
 
@@ -18,7 +17,7 @@ function Form({ todo, setTodo, addTodo }: Props) {
       time: todo.time,
       timeofday: todo.timeofday,
     });
-  }
+  };
 
   return (
     <form className="form" onSubmit={() => handleSubmit}>
@@ -28,9 +27,6 @@ function Form({ todo, setTodo, addTodo }: Props) {
         name="text"
         placeholder="Your task"
         required
-        onChange={(e: ChangeEvent) => {
-          setTodo({ text: e.currentTarget.value });
-        }}
       />
       <input
         className="form__input_time"
@@ -39,17 +35,8 @@ function Form({ todo, setTodo, addTodo }: Props) {
         placeholder="Time"
         required
         maxLength={5}
-        onChange={e => {
-          setTodo({ time: e.currentTarget.value });
-        }}
       />
-      <select
-        className="form__input_time"
-        name="timeofday"
-        onChange={e => {
-          setTodo({ timeofday: e.currentTarget.value });
-        }}
-      >
+      <select className="form__input_time" name="timeofday">
         <option>AM</option>
         <option>PM</option>
       </select>

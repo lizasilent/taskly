@@ -5,7 +5,7 @@ import { Todo, Todos } from 'types/types';
 import plus from '../../images/plus.png';
 import TodoList from '../TodoList';
 import Form from './Form/Form';
-import DateBlock from './DateBlock/DateBlock';
+import DateBlock from './Date/DateBlock';
 
 function CenterMenu() {
   const [active, setActive] = useState(true);
