@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 import './form.css';
 import { Todo, Todos } from 'types/types';
 
@@ -28,8 +28,8 @@ function Form({ todo, setTodo, addTodo }: Props) {
         name="text"
         placeholder="Your task"
         required
-        onChange={(e: EventTarget) => {
-          setTodo({ text: e.target.value });
+        onChange={(e: ChangeEvent) => {
+          setTodo({ text: e.currentTarget.value });
         }}
       />
       <input
@@ -40,14 +40,14 @@ function Form({ todo, setTodo, addTodo }: Props) {
         required
         maxLength={5}
         onChange={e => {
-          setTodo({ time: e.target.value });
+          setTodo({ time: e.currentTarget.value });
         }}
       />
       <select
         className="form__input_time"
         name="timeofday"
         onChange={e => {
-          setTodo({ timeofday: e.target.value });
+          setTodo({ timeofday: e.currentTarget.value });
         }}
       >
         <option>AM</option>

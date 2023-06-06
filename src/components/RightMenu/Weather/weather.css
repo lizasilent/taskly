@@ -6,7 +6,7 @@
 }
 
 .weather__icon {
-  background: url(../../images/Weather.png) center no-repeat;
+  background: url(../../../images/Weather.png) center no-repeat;
   height: 19px;
   width: 21px;
   margin-right: 10px;

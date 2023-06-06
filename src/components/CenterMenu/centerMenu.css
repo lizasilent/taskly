@@ -33,6 +33,11 @@
   margin-left: 40px;
 }
 
+.plus {
+border: none;
+background-color: transparent;
+}
+
 .plus:hover {
   opacity: 0.5;
   cursor: pointer;

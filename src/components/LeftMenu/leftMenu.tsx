@@ -1,22 +1,20 @@
 import React from 'react';
+import logo from '../../images/Logo2.png';
 import './leftMenu.css';
 
-import CalendarLeft from '../Calendar/Calendar';
-// import TodoList from "../TodoList/todolist";
+import CalendarLeft from './Calendar/Calendar';
 
 function LeftMenu() {
   return (
     <div className="left">
       <div className="logo">
-        <img className="logo__img" src="images/Logo2.png" alt="logo" />
+        <img className="logo__img" src={logo} alt="logo" />
       </div>
-
       <div className="weekly">
         <div className="weekly__header">
           <p className="weekly__header_big">Weekly Pinned</p>
           <p className="weekly__header_small">View all</p>
         </div>
-
         <div className="list-block list-block_weekly">
           <ul className="list">
             <li className="item">
@@ -28,9 +26,7 @@ function LeftMenu() {
             </li>
           </ul>
         </div>
-
         {/* <TodoList theme={"weekly"} /> */}
-
         <CalendarLeft />
       </div>
     </div>

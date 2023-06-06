@@ -24,7 +24,7 @@
   }
   
   .user__logo {
-    background: url(../../images/profile-pic.png) no-repeat;
+    background: url(../../../images/profile-pic.png) no-repeat;
     height: 60px;
     width: 57px;
   }
