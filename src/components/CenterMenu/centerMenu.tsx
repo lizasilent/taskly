@@ -14,7 +14,7 @@ function CenterMenu() {
   };
 
   const [todo, setTodo] = useState({ text: '', time: '', timeofday: '' });
-  const [todos, setTodos] = useState<Todos>([]);
+  const [todos, setTodos] = useState([]);
 
   const addTodo = (newTodo: Todo) => {
     if (newTodo) {
