@@ -3,6 +3,7 @@
     padding: 10px;
     background-color: #f8d57e;
     font-family: "Gilroy-Medium", Helvetica, Arial, sans-serif;
+    height: 100vh;
   }
   
   .layout__content {
@@ -15,7 +16,3 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  /* @media screen and (max-width: 900px) {
-    
-  } */

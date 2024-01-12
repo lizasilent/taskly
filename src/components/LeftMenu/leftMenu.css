@@ -5,17 +5,6 @@
   margin: 20px 0;
 }
 
-.logo {
-  display: flex;
-  justify-content: left;
-  padding-bottom: 70px;
-}
-
-.logo__img {
-  height: 31px;
-  width: 100px;
-}
-
 .weekly__header {
   display: flex;
   flex-direction: row;
@@ -35,3 +24,10 @@
   color: #f4b860;
 }
 
+.locales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}

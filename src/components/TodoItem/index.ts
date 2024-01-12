@@ -1,3 +1,3 @@
-import TodoItem from './Todoitem';
+import TodoItem from './TodoItem';
 
 export default TodoItem;

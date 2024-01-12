@@ -1,7 +1,6 @@
 .weather {
   display: flex;
   flex-direction: row;
-  padding: 30px;
   margin-bottom: 19px;
 }
 

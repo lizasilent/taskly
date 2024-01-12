@@ -10,8 +10,11 @@ function LeftMenu() {
   return (
     <div className="left">
       <DateBlock />
-      <Time />
-      <Weather />
+      <div className="locales">
+        <Time />
+        <Weather />
+      </div>
+
       <div className="weekly">
         <div className="weekly__header">
           <p className="weekly__header_big">Weekly Pinned</p>
