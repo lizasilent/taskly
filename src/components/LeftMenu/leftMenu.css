@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.weekly {
+  padding-top: 20px;
+}
+
 .weekly__header {
   display: flex;
   flex-direction: row;
