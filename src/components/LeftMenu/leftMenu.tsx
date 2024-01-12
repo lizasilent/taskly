@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from '../../images/Logo2.png';
-import './leftMenu.css';
-
-import CalendarLeft from './Calendar/Calendar';
+import './LeftMenu.css';
+import './Calendar/Calendar.css';
+import Calendar from 'react-calendar';
+import DateBlock from 'components/LeftMenu/Date';
+import Time from 'components/RightMenu/Time';
+import Weather from 'components/RightMenu/Weather';
 
 function LeftMenu() {
   return (
     <div className="left">
-      <div className="logo">
-        <img className="logo__img" src={logo} alt="logo" />
-      </div>
+      <DateBlock />
+      <Time />
+      <Weather />
       <div className="weekly">
         <div className="weekly__header">
           <p className="weekly__header_big">Weekly Pinned</p>
@@ -27,7 +29,11 @@ function LeftMenu() {
           </ul>
         </div>
         {/* <TodoList theme={"weekly"} /> */}
-        <CalendarLeft />
+        <Calendar
+          className="calendar"
+          showFixedNumberOfWeeks={false}
+          locale="en-EN"
+        />
       </div>
     </div>
   );

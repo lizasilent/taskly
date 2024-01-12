@@ -1,5 +1,5 @@
 import React from 'react';
-import './layout.css';
+import './Layout.css';
 
 import LeftMenu from '../LeftMenu';
 import CenterMenu from '../CenterMenu';

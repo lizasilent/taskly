@@ -1,5 +1,5 @@
 import React from 'react';
-import './music.css';
+import './Music.css';
 
 function Music() {
   return (

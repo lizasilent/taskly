@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
-import './centerMenu.css';
-import { Todo, Todos } from 'types/types';
+import './CenterMenu.css';
+import { Todo } from 'types/types';
 import plus from '../../images/plus.png';
 import TodoList from '../TodoList';
 import Form from './Form/Form';
-import DateBlock from './Date/DateBlock';
 
 function CenterMenu() {
   const [active, setActive] = useState(true);
+  const [todo, setTodo] = useState({ text: '', time: '', timeofday: '' });
+  const [todos, setTodos] = useState<any>([]);
 
   const handleForm = () => {
     setActive(!active);
   };
 
-  const [todo, setTodo] = useState({ text: '', time: '', timeofday: '' });
-  const [todos, setTodos] = useState([]);
-
   const addTodo = (newTodo: Todo) => {
     if (newTodo) {
-      setTodos([...todos, newTodo]);
+      setTodos([todos, newTodo]);
       setTodo({ text: '', time: '', timeofday: '' });
     }
   };
@@ -26,11 +24,7 @@ function CenterMenu() {
   return (
     <div className="middle">
       <div className="middle__header">
-        <div>
-          <p className="text">Today’s schedule</p>
-          <DateBlock />
-        </div>
-
+        <p className="text">Today’s schedule</p>
         <div>
           <button type="submit" className="plus" onClick={handleForm}>
             <img src={plus} alt="plus" />

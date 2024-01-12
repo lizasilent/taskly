@@ -1,10 +1,12 @@
 import React from 'react';
-import './form.css';
-import { Todo, Todos } from 'types/types';
+import './Form.css';
+import { Todo } from 'types/types';
 
 interface Props {
   todo: Todo;
-  addTodo: (todo: Todo) => Todos;
+  addTodo: any;
+  // eslint-disable-next-line react/no-unused-prop-types
+  setTodo: any;
 }
 
 function Form({ todo, addTodo }: Props) {

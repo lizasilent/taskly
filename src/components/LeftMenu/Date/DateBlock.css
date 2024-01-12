@@ -1,0 +1,30 @@
+.arrow-block img {
+  margin-right: 10px;
+}
+
+.date__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date__header {
+  font-size: 36px;
+  line-height: 50px;
+  text-align: left;
+  margin: 0;
+  color: #F4B860;
+}
+
+.date__arrow-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.date__arrow-block img:first-child{
+    margin-right: 10px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './todoitem.css';
+import './Todoitem.css';
 import { Todo } from 'types/types';
 
 interface Props {

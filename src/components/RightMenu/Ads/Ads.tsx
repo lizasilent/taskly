@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
-import './ads.css';
+import './Ads.css';
 
 function Ads() {
   const [activity, setActivity] = React.useState(true);

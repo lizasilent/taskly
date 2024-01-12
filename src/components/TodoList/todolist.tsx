@@ -1,5 +1,5 @@
 import React from 'react';
-import './todolist.css';
+import './Todolist.css';
 
 import { Todos } from 'types/types';
 import TodoItem from '../TodoItem';
