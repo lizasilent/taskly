@@ -25,12 +25,10 @@
   margin: 0;
 }
 
-.arrow-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 40px;
+
+.plus {
+border: none;
+background-color: transparent;
 }
 
 .plus:hover {
