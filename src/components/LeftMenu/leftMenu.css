@@ -2,7 +2,6 @@
   min-width: 357px;
   display: flex;
   flex-direction: column;
-  margin: 20px 0;
 }
 
 .weekly__header {
@@ -29,5 +28,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  align-content: center;
+  padding: 0 0 15px 0;
 }

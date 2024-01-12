@@ -31,7 +31,6 @@ function LeftMenu() {
             </li>
           </ul>
         </div>
-        {/* <TodoList theme={"weekly"} /> */}
         <Calendar
           className="calendar"
           showFixedNumberOfWeeks={false}
